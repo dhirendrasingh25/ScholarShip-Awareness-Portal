@@ -17,7 +17,7 @@ server.use("/company", companyRoutes.router);
 
 async function main() {
   await mongoose.connect(
-    "mongodb+srv://shaikhsho292:8v0FXY7VpEbXazDK@cluster0.hwfnu4k.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://dhirendrashersingh:8698867967@cluster0.mhue97d.mongodb.net/?retryWrites=true&w=majority"
   );
   console.log("database Connected");
 }

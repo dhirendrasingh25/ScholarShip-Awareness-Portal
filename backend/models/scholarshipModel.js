@@ -22,15 +22,7 @@ const scholarshipSchema = new Schema({
   },
   field: {
     type: String,
-    enum: [
-      "Accounting",
-      "Agriculture",
-      "Engineering",
-      "Economics",
-      "Law",
-      "Arts",
-      "Hospitality",
-    ],
+
     required: [true, "A scholarship must have a field"],
   },
   hostCountry: {
@@ -68,7 +60,6 @@ const scholarshipSchema = new Schema({
   },
   fundingType: {
     type: String,
-    enum: ["Tuition fee", "Tuition + Stay"],
     required: [true, "A scholarship must have a fundingType"],
   },
   fundingValue: {

@@ -4,7 +4,6 @@ import Saly from "../assets/Saly.png";
 import Logo from "../assets/Logo.jpeg";
 // import a right arrow from fontawesome
 
-
 function Landing() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isSignUpOpen, setIsSignUpOpen] = useState(false);
@@ -24,7 +23,7 @@ function Landing() {
           <div className="mx-4">
             <div className="relative">
               <button
-                className="px-5 py-3 rounded bg-[#010080] text-white mx-2"
+                className="px-2 py-2 rounded bg-[#010080] text-white mx-2"
                 onClick={() => setIsSignUpOpen(!isSignUpOpen)}
               >
                 Sign Up
@@ -36,7 +35,7 @@ function Landing() {
                 </div>
               )}
               <button
-                className="px-7 py-3 rounded bg-[#010080] text-white mx-2"
+                className="px-2 py-2 rounded bg-[#010080] text-white mx-2"
                 onClick={() => setIsLoginOpen(!isLoginOpen)}
               >
                 Login
@@ -61,7 +60,7 @@ function Landing() {
               </span>
             </div>
             <img src={Saly} alt="landingSvg" className="w-[30%] h-[30%]" />
-            <button className="bg-[#010080] flex flex-row items-center px-6 py-4 rounded-full text-2xl text-white font-medium">
+            <button className="bg-[#010080] flex flex-row items-center px-4 py-2 rounded-full text-2xl text-white font-medium">
               <div>Get Started</div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
