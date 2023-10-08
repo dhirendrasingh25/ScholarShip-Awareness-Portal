@@ -45,9 +45,12 @@ exports.signup = async (req, res, next) => {
 };
 
 exports.login = async (req, res, next) => {
+  // console.log(req.body);
   const { email, password } = req.body;
+  console.log(email, password);
 
   if (!email || !password) {
+    // console.log("fuck");
     return res.status(400).json({
       status: "failed",
       message: "Please provide email and password!",
@@ -57,7 +60,7 @@ exports.login = async (req, res, next) => {
 
   try {
     const student = await Student.findOne({ email }).select("+password");
-
+    // console.log(student, student.password);
     if (
       !student ||
       !(await student.correctPassword(password, student.password))
